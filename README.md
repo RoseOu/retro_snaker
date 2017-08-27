@@ -5,5 +5,7 @@
 ```
 $ pip install pygame
 ```
-
+### Step 2: Just play!
 <img src="snake.gif"/>
+
+But there are some bugs still not be fixed...
