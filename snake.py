@@ -137,18 +137,6 @@ def draw_all(food,snake,font,scores):
     food.draw_food()
     draw_scores(font,scores)
 
-def game_over(font):
-    text2=font.render('Game over!', True, OVER_COLOR)
-    textobj=text2.get_rect()
-    textobj.center = (COLNUM*LEN/2, ROWNUM*LEN/2)
-    screen.blit(text2,textobj)
-    pygame.display.update()
-    while True:
-        for event in pygame.event.get():
-            if event.type==QUIT:
-                pygame.quit()
-                sys.exit()
-
 def main():
     pygame.init()
     global screen
